@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(230, 230, 230);
+  margin: 0px;
+}
+
+/* navbar styling here */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: left;
+}
+
+.logo {
+  width: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right {
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+
+.btn-contact {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 0px;
+}
+
+.btn-contact:hover {
+  background-color: black;
+}
+
+/* new project styling here */
+
+.new-project {
+  margin-bottom: 100px;
+}
+
+.form-project {
+  width: 60%;
+  margin: 30px auto;
+}
+
+.form-project h1 {
+  text-align: center;
+}
+
+.input-form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px grey;
+  resize: none;
+}
+
+.form-project label {
+  font-weight: bold;
+}
+
+.form-project button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  float: right;
+}
+
+.form-project button:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.date-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.date {
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 15px;
+}
+.checkbox-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* project styling here */
+
+.project {
+  background-color: white;
+  margin: auto;
+}
+
+.project h1 {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.list-project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content-container {
+  box-shadow: 0px 10px 20px grey;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.content-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.content-title {
+  font-weight: bold;
+}
+
+.title-container {
+  line-height: 10%;
+  margin: 10px;
+}
+
+.content-date {
+  color: grey;
+  font-size: small;
+}
+
+.content-description {
+  width: 80%;
+  margin: 10px;
+}
+
+.content-tech-container {
+  display: flex;
+  gap: 10px;
+  margin: 15px;
+}
+
+.content-tech {
+  width: 30px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 5px;
+  margin: 10px;
+}
+
+.btn-edit {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  width: 100%;
+}
+
+.btn-delete {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  width: 100%;
+}
+
+.btn-edit:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.btn-delete:hover {
+  background-color: black;
+  transition: 0.5s;
+}

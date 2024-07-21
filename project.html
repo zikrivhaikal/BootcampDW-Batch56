@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e371396b10.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/project.css" />
+    <title>My Project</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <img src="assets/img/logo.png" alt="Logo Dumbways" class="logo" />
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="project.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="btn-contact" onclick="location.href='contact.html'">
+          Contact Me
+        </button>
+      </div>
+    </nav>
+
+    <div class="new-project">
+      <form onsubmit="addProject(event)" class="form-project">
+        <h1>ADD MY PROJECT</h1>
+        <div class="input-container">
+          <label for="input-project">Project Name</label>
+          <input type="text" id="input-project" class="input-form" required />
+        </div>
+        <div class="date-container">
+          <div class="date">
+            <label for="input-start-date">Start Date</label>
+            <input type="date" id="input-start-date" class="input-form" />
+          </div>
+          <div class="date">
+            <label for="input-end-date">End Date</label>
+            <input type="date" id="input-end-date" class="input-form" />
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="input-description">Description</label>
+          <textarea id="input-description" class="input-form"></textarea>
+        </div>
+        <label for="input-technologies">Technologies</label>
+        <div class="checkbox-container">
+          <div class="checkbox-list">
+            <input
+              type="checkbox"
+              value="nodejs"
+              class="checkbox"
+              id="nodejs"
+            />
+            <label for="nodejs">Node JS</label>
+          </div>
+
+          <div class="checkbox-list">
+            <input
+              type="checkbox"
+              value="nextjs"
+              class="checkbox"
+              id="nextjs"
+            />
+            <label for="nextjs">Next JS</label>
+          </div>
+
+          <div class="checkbox-list">
+            <input
+              type="checkbox"
+              value="reactjs"
+              class="checkbox"
+              id="reactjs"
+            />
+            <label for="reactjs">React JS</label>
+          </div>
+
+          <div class="checkbox-list">
+            <input
+              type="checkbox"
+              value="typescript"
+              class="checkbox"
+              id="typescript"
+            />
+            <label for="typescript">TypeScript</label>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="input-image">Upload Image</label>
+          <input type="file" id="input-image" class="input-form" />
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <div class="project">
+      <h1>MY PROJECT</h1>
+      <div class="list-project" id="content"></div>
+    </div>
+  </body>
+  <script src="assets/js/project.js"></script>
+</html>

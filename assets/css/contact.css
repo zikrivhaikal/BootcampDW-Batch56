@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(230, 230, 230);
+  margin: 0px;
+}
+
+/* navbar styling here */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: left;
+}
+
+.logo {
+  width: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right {
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+
+.btn-contact {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 0px;
+}
+
+.btn-contact:hover {
+  background-color: black;
+}
+
+/* form styling here */
+
+form {
+  width: 60%;
+  margin: 30px auto;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px grey;
+  resize: none;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  float: right;
+}
+
+form button:hover {
+  background-color: black;
+  transition: 0.5s;
+}
